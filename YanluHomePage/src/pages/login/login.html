@@ -1,0 +1,40 @@
+ 
+<ion-header no-border> 
+  <ion-navbar color="lv">
+    <ion-title>登录</ion-title>
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content padding>
+    <!-- 头像 -->
+    <p style="text-align:center;">
+      <img src=" ../assets/imgs/l-1.jpg"  width="80px" height="80px" style="border-radius:40px;"/>
+    </p>
+    
+  <!-- 输入框 -->
+    
+
+     
+
+      <ion-item>
+        <ion-label>账号</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>密码</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    
+    
+        
+      <p style="text-align:center;">
+        <button ion-button  color="lv" style="width:200px; margin:50px auto;"  >登　　录</button>   
+      </p>
+
+      <p>
+        <span (click)="goFind()">忘记密码？</span>
+        <span style="float:right;" (click)="goRes()">没有账号？去注册</span>
+      </p>
+</ion-content>

@@ -1,0 +1,58 @@
+<!--
+  Generated template for the YanxunNewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title class="yanxun-title">研讯</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card class="yanxun-card">
+
+    <ion-item>
+      <h3 class="yanxun-card-title">{{articleD.title}}</h3>
+      <span class="yanxun-card-span">{{articleD.time}}</span>
+      <span class="yanxun-card-span">{{articleD.from}}</span>
+    </ion-item>
+
+    <ion-card-content>
+      <p *ngFor="let item of articleD.source" class="yanxun-card-p">{{item}}</p>
+    </ion-card-content>
+
+    <h4 class="yanxun-news-line">评论</h4>
+
+    <div class="yanxun-news-comment">
+      <img class="yanxun-news-comment-img" src="../../assets/imgs/my.jpg" alt="">
+      <div class="yanxun-news-comment-detail">
+        <p class="yanxun-news-comment-detail-name">一位不愿透露姓名的同学</p>
+        <p class="yanxun-news-comment-detail-time">5-12 19:47</p>
+        <p>真棒，大北理棒棒哒！</p>
+      </div>
+    </div>
+
+    <div class="yanxun-news-comment">
+      <img class="yanxun-news-comment-img" src="../../assets/imgs/my.jpg" alt="">
+      <div class="yanxun-news-comment-detail">
+        <p class="yanxun-news-comment-detail-name">一位不愿透露姓名的同学</p>
+        <p class="yanxun-news-comment-detail-time">5-12 19:47</p>
+        <p>真棒，大北理棒棒哒！</p>
+      </div>
+    </div>
+
+      <div class="yanxun-news-comment">
+        <img class="yanxun-news-comment-img" src="../../assets/imgs/my.jpg" alt="">
+        <div class="yanxun-news-comment-detail">
+          <p class="yanxun-news-comment-detail-name">一位不愿透露姓名的同学</p>
+          <p class="yanxun-news-comment-detail-time">5-12 19:47</p>
+          <p>真棒，大北理棒棒哒！</p>
+        </div>
+      </div>
+
+  </ion-card>
+
+</ion-content>

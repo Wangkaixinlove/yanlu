@@ -1,0 +1,57 @@
+<!--
+  Generated template for the YanxunPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <ion-title class="yanxun-title">研讯</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="yanxun-content">
+  <ion-slides class="yanxun-slides">
+    <ion-slide class="yanxun-slide">
+      <span><a class="yanxun-slide-a yunlu-slide-active">考研动态</a></span>
+    </ion-slide>
+    <ion-slide class="yanxun-slide">
+      <span><a class="yanxun-slide-a">院校信息</a></span>
+    </ion-slide>
+    <ion-slide class="yanxun-slide">
+      <span><a class="yanxun-slide-a">政策新闻</a></span>
+    </ion-slide>
+    <ion-slide class="yanxun-slide">
+      <span><a class="yanxun-slide-a">院校资讯</a></span>
+    </ion-slide>
+    <ion-slide class="yanxun-slide">
+      <span><a class="yanxun-slide-a">复试</a></span>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card class="yanxun-card" *ngFor="let item of dataArr.data">
+
+      <ion-card-content (click)="showDetails(item.title)">
+        <!-- <p>5月10日下午，北京理工大学机器人队成立仪式在北京理工大学良乡校区南操场举行，北京理工大学党委副书记包丽颖，北京元六鸿远电子科技股份有限公司、校团委、学生工作处、徐特立学院、光电学院、外国语学院、自动化学院负责人出席仪式，仪式由自动化学院党委副书记、副院长张宏亮主持。<br><button class="yanxun-more" (click)="yanxunCardDetail()">详情</button></p> -->
+      <h2>{{item.title}}</h2>
+      <p class="yanxun-item-time">{{item.time}}</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 点赞</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 评论</div>
+          </button>
+        </ion-col>
+      </ion-row>
+
+  </ion-card>
+
+</ion-content>

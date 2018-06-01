@@ -1,0 +1,80 @@
+
+<ion-header>
+
+  <ion-navbar  color="lv">
+    <ion-title>注册</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <ion-item>
+        <ion-label>用户名：</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>性别：</ion-label>
+          <ion-select [(ngModel)]="xingbie">
+            <ion-option value="male">女</ion-option>
+            <ion-option value="female">男</ion-option>
+          </ion-select>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label>手机号：</ion-label>
+          <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>考试科目：</ion-label>
+          <ion-select [(ngModel)]="kemu" multiple="true">
+            <ion-option value="e1">英语一</ion-option>
+            <ion-option value="e2">英语二</ion-option>
+            <ion-option value="m1">数学一</ion-option>
+            <ion-option value="m2">数学二</ion-option>
+            <ion-option value="p">政治</ion-option>
+            <ion-option value="it">计算机技术</ion-option>
+            <ion-option value="p1">网络原理</ion-option>
+            <ion-option value="p2">大数据</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>考研年份：</ion-label>
+          <ion-select [(ngModel)]="year">
+            <ion-option value="2017">2017</ion-option>
+            <ion-option value="2018">2018</ion-option>
+            <ion-option value="2019">2019</ion-option>
+            <ion-option value="2020">2020</ion-option>
+            <ion-option value="2021">2021</ion-option>
+            <ion-option value="2022">2022</ion-option>
+            <ion-option value="2023">2023</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>密码：</ion-label>
+          <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>确认密码：</ion-label>
+          <ion-input type="password"></ion-input>
+      </ion-item>
+
+
+
+       <p style="text-align:center;">学生证</p>
+       <p><ion-icon ios="ios-camera" md="md-camera" style="font-size:50px;  margin-right:150px;"  ></ion-icon></p>
+
+       <p style="text-align:center;">
+          <button ion-button  color="lv" style="width:200px; margin:50px auto;"  >注　　册</button>
+       </p>
+
+
+
+
+
+</ion-content>

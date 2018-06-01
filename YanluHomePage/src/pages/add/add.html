@@ -1,0 +1,16 @@
+ 
+<ion-header noborder>
+  <ion-navbar color="lv">
+    <ion-title>写帖子</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+   <textarea rows="20" cols="50" id="ta" [(ngModel)]="data" onfocus="document.getElementById('note').style.display='none'; console.log(value);" onblur="if( value.trim()== ''){document.getElementById('note').style.display='block';   console.log('block');}" style="border:2px solid rgba(217, 221, 212, 0.89); line-height:10px;">
+   </textarea>
+   <div id="note" class="note">
+    <font color="#777">说点什么吧......</font>
+   </div>
+   <button ion-button color="lv" style="float:right; margin-right:10px;" (click)="fabu()">发布</button>
+</ion-content>
